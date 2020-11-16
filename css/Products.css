@@ -1,0 +1,57 @@
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f4f5eb;
+}
+
+
+.borderimg {
+	border-radius: 10px;
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	padding: 5px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+
+.row {
+	display: block;
+	width: 100%;
+}
+
+
+.row :: after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+
+[class*="col-"]{
+padding: 5px;
+float: left;
+width: 50%;
+
+}
+  
+.par {
+	font-size: 25px;
+	font-family: sans-serif;
+	margin: 10px;
+}
+
+/*################################# Responsiveness on other devices ################################*/
+@media only screen and (max-width: 1274px) {
+
+    .borderimg {
+    	margin-top: 10em;
+    }
+
+
+}
